@@ -1,0 +1,100 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+        background-image: url("images/UserBackground.jpg");
+      }
+      .video-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
+      }
+      .container {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        width: 300px;
+        text-align: center;
+      }
+      h1 {
+        text-align: center;
+        color: #007bff;
+      }
+      .user-info {
+        text-align: left;
+        margin: 20px 0;
+      }
+      .user-info p {
+        margin: 10px 0;
+      }
+      .user-image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 10px auto;
+      }
+      .edit-profile {
+        margin: 20px 0;
+      }
+      a {
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+      }
+      /* Animation */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .container {
+        animation: fadeIn 1s;
+      }
+    </style>
+  </head>
+  <body>
+    >
+    <div class="container">
+      <h1>User Profile</h1>
+      <img src="images/c2.jpg" alt="User Image" class="user-image" />
+      <div class="user-info">
+        <p><strong>Name:</strong> Anish</p>
+        <p><strong>Username:</strong> ansi32</p>
+        <p><strong>Email:</strong> anish.doe@email.com</p>
+        <p><strong>Age:</strong> 20</p>
+        <p><strong>Gender:</strong> Male</p>
+        <p><strong>Height:</strong> 183 cm</p>
+        <p><strong>Weight:</strong> 79 kg</p>
+        <p><strong>Goal:</strong> Weight loss</p>
+        <p><strong>Activity Level:</strong> Moderate</p>
+        <p><strong>Favorite Workout:</strong> Running</p>
+        <p><strong>Diet Plan:</strong> Balanced Diet</p>
+      </div>
+      <div class="edit-profile">
+        <a href="edit_profile.html">Edit Profile</a>
+      </div>
+    </div>
+  </body>
+</html>
